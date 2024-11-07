@@ -52,12 +52,12 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(61, 551);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(108, 48);
+            this.materialLabel1.Size = new System.Drawing.Size(112, 48);
             this.materialLabel1.TabIndex = 2;
             this.materialLabel1.Text = "informacion\r\ncompletada";
             // 
@@ -79,6 +79,7 @@
             this.bmt_codigo.Size = new System.Drawing.Size(292, 33);
             this.bmt_codigo.TabIndex = 4;
             this.bmt_codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_codigo.OnValueChanged += new System.EventHandler(this.bmt_codigo_OnValueChanged);
             // 
             // drop_options
             // 
@@ -105,7 +106,7 @@
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(56, 162);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -147,6 +148,7 @@
             this.bmt_extra.Size = new System.Drawing.Size(292, 33);
             this.bmt_extra.TabIndex = 9;
             this.bmt_extra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_extra.OnValueChanged += new System.EventHandler(this.bmt_extra_OnValueChanged);
             // 
             // bmt_primera
             // 
@@ -166,6 +168,7 @@
             this.bmt_primera.Size = new System.Drawing.Size(292, 33);
             this.bmt_primera.TabIndex = 10;
             this.bmt_primera.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_primera.OnValueChanged += new System.EventHandler(this.bmt_primera_OnValueChanged);
             // 
             // bmt_segunda
             // 
@@ -185,6 +188,7 @@
             this.bmt_segunda.Size = new System.Drawing.Size(292, 33);
             this.bmt_segunda.TabIndex = 11;
             this.bmt_segunda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_segunda.OnValueChanged += new System.EventHandler(this.bmt_segunda_OnValueChanged);
             // 
             // bmt_manchada
             // 
@@ -204,6 +208,7 @@
             this.bmt_manchada.Size = new System.Drawing.Size(330, 33);
             this.bmt_manchada.TabIndex = 14;
             this.bmt_manchada.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_manchada.OnValueChanged += new System.EventHandler(this.bmt_manchada_OnValueChanged);
             // 
             // bmt_cuarta
             // 
@@ -223,6 +228,7 @@
             this.bmt_cuarta.Size = new System.Drawing.Size(330, 33);
             this.bmt_cuarta.TabIndex = 13;
             this.bmt_cuarta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_cuarta.OnValueChanged += new System.EventHandler(this.bmt_cuarta_OnValueChanged);
             // 
             // bmt_tercera
             // 
@@ -242,6 +248,7 @@
             this.bmt_tercera.Size = new System.Drawing.Size(298, 33);
             this.bmt_tercera.TabIndex = 12;
             this.bmt_tercera.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_tercera.OnValueChanged += new System.EventHandler(this.bmt_tercera_OnValueChanged);
             // 
             // bmt_total
             // 
@@ -281,6 +288,7 @@
             this.bmt_chica.Size = new System.Drawing.Size(330, 33);
             this.bmt_chica.TabIndex = 17;
             this.bmt_chica.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bmt_chica.OnValueChanged += new System.EventHandler(this.bmt_chica_OnValueChanged);
             // 
             // bunifuImageButton1
             // 

@@ -62,5 +62,45 @@ namespace TesisFinal
         {
             
         }
+
+        private void bmt_segunda_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_primera_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_extra_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_codigo_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_tercera_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_chica_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_manchada_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bmt_cuarta_OnValueChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
