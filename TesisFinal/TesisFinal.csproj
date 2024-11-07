@@ -95,6 +95,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras_D_ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras_D_ver.Designer.cs">
+      <DependentUpon>Compras_D_ver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compra_D.cs">
       <SubType>Form</SubType>
     </Compile>
