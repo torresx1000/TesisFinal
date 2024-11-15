@@ -838,14 +838,14 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 50D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(763, 337);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(732, 337);
             this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.DarkSlateGray;
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(178, 59);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(233, 59);
             this.bunifuFlatButton4.TabIndex = 121;
             this.bunifuFlatButton4.Text = "APLICAR";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
