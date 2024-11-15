@@ -6,7 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
+
+using Logic;
 
 namespace TesisFinal
 {
@@ -15,6 +18,20 @@ namespace TesisFinal
         public Ventas_ver()
         {
             InitializeComponent();
+            listarVentas();
+        }
+        public void listarVentas()
+        {
+            bft_ventas.DataSource = Log_Venta.Instancia.ListarVentas();
+        }
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Ventas_ver_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

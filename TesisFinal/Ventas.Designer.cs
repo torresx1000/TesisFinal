@@ -38,17 +38,17 @@
             this.bmt_manchada = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bmt_cuarta = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gb_stock = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bx_search_date = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -292,45 +292,15 @@
             this.gb_stock.Text = "STOCK";
             this.gb_stock.Enter += new System.EventHandler(this.gb_stock_Enter);
             // 
-            // bunifuCustomLabel1
+            // bunifuCustomLabel10
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(36, 77);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(0, 18);
-            this.bunifuCustomLabel1.TabIndex = 23;
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(28, 187);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(16, 18);
-            this.bunifuCustomLabel2.TabIndex = 24;
-            this.bunifuCustomLabel2.Text = "1";
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(28, 297);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(16, 18);
-            this.bunifuCustomLabel3.TabIndex = 26;
-            this.bunifuCustomLabel3.Text = "3";
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(28, 241);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(16, 18);
-            this.bunifuCustomLabel4.TabIndex = 25;
-            this.bunifuCustomLabel4.Text = "2";
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(25, 77);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(22, 18);
+            this.bunifuCustomLabel10.TabIndex = 31;
+            this.bunifuCustomLabel10.Text = "ID";
             // 
             // bunifuCustomLabel5
             // 
@@ -372,6 +342,46 @@
             this.bunifuCustomLabel8.TabIndex = 27;
             this.bunifuCustomLabel8.Text = "4";
             // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(28, 297);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(16, 18);
+            this.bunifuCustomLabel3.TabIndex = 26;
+            this.bunifuCustomLabel3.Text = "3";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(28, 241);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(16, 18);
+            this.bunifuCustomLabel4.TabIndex = 25;
+            this.bunifuCustomLabel4.Text = "2";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(28, 187);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(16, 18);
+            this.bunifuCustomLabel2.TabIndex = 24;
+            this.bunifuCustomLabel2.Text = "1";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(36, 77);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(0, 18);
+            this.bunifuCustomLabel1.TabIndex = 23;
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
@@ -388,16 +398,6 @@
             this.bx_search_date.Name = "bx_search_date";
             this.bx_search_date.Size = new System.Drawing.Size(217, 24);
             this.bx_search_date.TabIndex = 24;
-            // 
-            // bunifuCustomLabel10
-            // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(25, 77);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(22, 18);
-            this.bunifuCustomLabel10.TabIndex = 31;
-            this.bunifuCustomLabel10.Text = "ID";
             // 
             // bunifuCustomLabel11
             // 
@@ -501,7 +501,7 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(326, 250);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(326, 259);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(114, 33);
@@ -521,7 +521,7 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(326, 483);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(326, 492);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(114, 33);
@@ -560,7 +560,7 @@
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(326, 427);
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(326, 436);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(114, 33);
@@ -580,7 +580,7 @@
             this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(326, 140);
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(326, 149);
             this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(114, 33);
@@ -600,7 +600,7 @@
             this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox6.LineThickness = 3;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(326, 369);
+            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(326, 378);
             this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
             this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(114, 33);
@@ -620,7 +620,7 @@
             this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox7.LineThickness = 3;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(326, 194);
+            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(326, 203);
             this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
             this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(114, 33);
@@ -640,7 +640,7 @@
             this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox8.LineThickness = 3;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(326, 312);
+            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(326, 321);
             this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
             this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(114, 33);
@@ -697,7 +697,7 @@
             this.bunifuMaterialTextbox11.LineIdleColor = System.Drawing.Color.ForestGreen;
             this.bunifuMaterialTextbox11.LineMouseHoverColor = System.Drawing.Color.Black;
             this.bunifuMaterialTextbox11.LineThickness = 3;
-            this.bunifuMaterialTextbox11.Location = new System.Drawing.Point(763, 18);
+            this.bunifuMaterialTextbox11.Location = new System.Drawing.Point(761, 13);
             this.bunifuMaterialTextbox11.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox11.Name = "bunifuMaterialTextbox11";
             this.bunifuMaterialTextbox11.Size = new System.Drawing.Size(310, 33);
@@ -948,7 +948,7 @@
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(522, 14);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(540, 14);
             this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
             this.bunifuDatepicker1.Size = new System.Drawing.Size(210, 32);

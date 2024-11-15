@@ -20,23 +20,24 @@ namespace Logic
             }
         }
         //listar datos
-        public List<Ent_ventas> ListarCompra()
+        public List<Ent_ventas> ListarVentas()
         {
             return Dat_Ventas_V.Instancia.ListarVentas();
-        }
+        } 
+
         //insertar datos
-        public void InsertarCompra(Ent_ventas Com)
+        public void InsertarVentas(Ent_ventas Com)
         {
             Dat_Ventas_V.Instancia.InsertarVenta(Com);
         }
-        //modificar stock
 
-        public void ModificarCompra(Ent_ventas Com)
+        //modificar stock
+        public void ModificarVentas(Ent_ventas Com)
         {
             Dat_Ventas_V.Instancia.ModificarVenta(Com);
         }
         //eliminar
-        public void EliminarCompra(Ent_ventas Com)
+        public void EliminarVentas(Ent_ventas Com)
         {
             Dat_Ventas_V.Instancia.EliminarVenta(Com);
         }

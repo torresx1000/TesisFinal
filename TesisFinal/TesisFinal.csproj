@@ -144,6 +144,9 @@
     <Compile Include="Ventas_ver.Designer.cs">
       <DependentUpon>Ventas_ver.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compras_D_ver.resx">
+      <DependentUpon>Compras_D_ver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compra_D.resx">
       <DependentUpon>Compra_D.cs</DependentUpon>
     </EmbeddedResource>
