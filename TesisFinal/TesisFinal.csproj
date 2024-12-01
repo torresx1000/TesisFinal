@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +47,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>510DD2121923F4AF0A344A08434CAF8FD28DF526</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TesisFinal_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing">
@@ -101,11 +129,35 @@
     <Compile Include="Compras_D_ver.Designer.cs">
       <DependentUpon>Compras_D_ver.cs</DependentUpon>
     </Compile>
-    <Compile Include="Compra_D.cs">
+    <Compile Include="ComprasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Compra_D.Designer.cs">
-      <DependentUpon>Compra_D.cs</DependentUpon>
+    <Compile Include="ComprasForm.Designer.cs">
+      <DependentUpon>ComprasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagosCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagosCompras.Designer.cs">
+      <DependentUpon>PagosCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LPagosCompraVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPagosCompraVenta.Designer.cs">
+      <DependentUpon>LPagosCompraVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagosVentas.Designer.cs">
+      <DependentUpon>PagosVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -132,23 +184,41 @@
     <Compile Include="Stock_ver.Designer.cs">
       <DependentUpon>Stock_ver.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transacciones.Designer.cs">
+      <DependentUpon>Transacciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas_ver.cs">
+    <Compile Include="LVentas_ver.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas_ver.Designer.cs">
-      <DependentUpon>Ventas_ver.cs</DependentUpon>
+    <Compile Include="LVentas_ver.Designer.cs">
+      <DependentUpon>LVentas_ver.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Compras_D_ver.resx">
       <DependentUpon>Compras_D_ver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Compra_D.resx">
-      <DependentUpon>Compra_D.cs</DependentUpon>
+    <EmbeddedResource Include="ComprasForm.resx">
+      <DependentUpon>ComprasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagosCompras.resx">
+      <DependentUpon>PagosCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPagosCompraVenta.resx">
+      <DependentUpon>LPagosCompraVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagosVentas.resx">
+      <DependentUpon>PagosVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -164,11 +234,14 @@
     <EmbeddedResource Include="Stock_ver.resx">
       <DependentUpon>Stock_ver.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones.resx">
+      <DependentUpon>Transacciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas_ver.resx">
-      <DependentUpon>Ventas_ver.cs</DependentUpon>
+    <EmbeddedResource Include="LVentas_ver.resx">
+      <DependentUpon>LVentas_ver.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -180,25 +253,45 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TesisFinal_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Endidad\Entidad.csproj">
-      <Project>{8a585b93-6e17-4f84-b75a-56358221c596}</Project>
-      <Name>Entidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Logic\Logic.csproj">
-      <Project>{2bac6e5e-23e1-498e-be35-93a8c1407463}</Project>
-      <Name>Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="images_icons\calculadora.png" />
     <Content Include="images_icons\cambios.png" />
     <Content Include="images_icons\cambios_blue.png" />
     <Content Include="images_icons\cambios_yelou.png" />
+    <Content Include="images_icons\FONDO 1.jpg" />
+    <None Include="images_icons\logoupn.png" />
+    <Content Include="images_icons\muestreo.png" />
+    <Content Include="images_icons\ordenarAZ.png" />
+    <Content Include="images_icons\ordenarZA.PNG" />
     <Content Include="images_icons\sesion fin.png" />
+    <None Include="images_icons\teclado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{ebeb4e8c-740a-4b98-aa20-295de67d1931}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{e3be5454-edf1-4a84-bb13-183d23f02ac2}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

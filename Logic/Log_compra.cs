@@ -22,23 +22,23 @@ namespace Logic
         //listar datos
         public List<Ent_compra_r> ListarCompra()
         {
-            return Dat_Compra_R.Instancia.ListarCompras();
+            return Dat_Compra.Instancia.ListarCompras();
         }
         //insertar datos
         public void InsertarCompra(Ent_compra_r Com)
         {
-            Dat_Compra_R.Instancia.InsertarCompra(Com);
+            Dat_Compra.Instancia.InsertarCompra(Com);
         }
         //modificar stock
 
         public void ModificarCompra(Ent_compra_r Com)
         {
-            Dat_Compra_R.Instancia.ModificarCompra(Com);
+            Dat_Compra.Instancia.ModificarCompra(Com);
         }
         //eliminar
         public void EliminarCompra(Ent_compra_r Com)
         {
-            Dat_Compra_R.Instancia.EliminarCompra(Com);
+            Dat_Compra.Instancia.EliminarCompra(Com);
         }
     }
 }

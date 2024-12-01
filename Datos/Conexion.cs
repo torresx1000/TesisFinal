@@ -18,7 +18,7 @@ namespace Datos
             public SqlConnection Conectar()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=.; Initial Catalog = DBCliente4;" + //"User ID=sa; Password = 123";
+            con.ConnectionString = "Data Source = DESKTOP-CI0V46U\\SQLEXPRESS; Initial Catalog = TESIS;" + //"User ID=sa; Password = 123";
             "Integrated Security=true";
             return con;
         }

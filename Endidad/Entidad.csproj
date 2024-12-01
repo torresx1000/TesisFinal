@@ -7,8 +7,8 @@
     <ProjectGuid>{8A585B93-6E17-4F84-B75A-56358221C596}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Endidad</RootNamespace>
-    <AssemblyName>Endidad</AssemblyName>
+    <RootNamespace>Entidad</RootNamespace>
+    <AssemblyName>Entidad</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -41,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ent_compra_r.cs" />
+    <Compile Include="Ent_compra.cs" />
     <Compile Include="Ent_Stock.cs" />
     <Compile Include="Ent_ventas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

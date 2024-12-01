@@ -1,4 +1,4 @@
-﻿using Endidad;
+﻿using Entidad;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -30,7 +30,7 @@ namespace Datos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); // singleton
-                cmd = new SqlCommand("ListarVentas", cn);
+                cmd = new SqlCommand("ListarVenta", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();

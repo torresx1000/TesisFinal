@@ -1,5 +1,4 @@
-﻿using Endidad;
-using Logic;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logic;
+using CapaLogica;
 namespace TesisFinal
 {
     public partial class Compras_D_ver : Form
@@ -18,12 +17,24 @@ namespace TesisFinal
         {
             InitializeComponent();
             listarCompras();
+            
         }
         public void listarCompras()
         {
-            bft_compras.DataSource = Log_compra.Instancia.ListarCompra();
+            dataver.DataSource = LogCompra.Instancia.ListarCompra();
         }
         private void Compras_D_ver_Load(object sender, EventArgs e)
+        {
+            
+        }
+        
+
+        private void bft_compras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataver_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

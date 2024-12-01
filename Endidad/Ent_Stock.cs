@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Endidad
+namespace Entidad
 {
     public class Ent_Stock
     {

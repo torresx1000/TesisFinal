@@ -29,59 +29,72 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bft_compras = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.bft_compras)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Compras_D_ver));
+            this.dataver = new System.Windows.Forms.DataGridView();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.dataver)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bft_compras
+            // dataver
             // 
-            this.bft_compras.AllowUserToAddRows = false;
-            this.bft_compras.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bft_compras.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bft_compras.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bft_compras.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bft_compras.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bft_compras.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bft_compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bft_compras.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bft_compras.DoubleBuffered = true;
-            this.bft_compras.EnableHeadersVisualStyles = false;
-            this.bft_compras.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bft_compras.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bft_compras.Location = new System.Drawing.Point(0, 0);
-            this.bft_compras.Name = "bft_compras";
-            this.bft_compras.ReadOnly = true;
-            this.bft_compras.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bft_compras.RowHeadersWidth = 51;
-            this.bft_compras.RowTemplate.Height = 24;
-            this.bft_compras.Size = new System.Drawing.Size(800, 450);
-            this.bft_compras.TabIndex = 0;
+            this.dataver.AllowUserToAddRows = false;
+            this.dataver.AllowUserToDeleteRows = false;
+            this.dataver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataver.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataver.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataver.Enabled = false;
+            this.dataver.Location = new System.Drawing.Point(12, 42);
+            this.dataver.Name = "dataver";
+            this.dataver.ReadOnly = true;
+            this.dataver.RowHeadersWidth = 51;
+            this.dataver.RowTemplate.Height = 24;
+            this.dataver.Size = new System.Drawing.Size(1220, 466);
+            this.dataver.TabIndex = 0;
+            this.dataver.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataver_CellContentClick);
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.dataver);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(228)))), ((int)(((byte)(215)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(239)))), ((int)(((byte)(223)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1244, 520);
+            this.bunifuGradientPanel1.TabIndex = 3;
             // 
             // Compras_D_ver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bft_compras);
+            this.ClientSize = new System.Drawing.Size(1244, 520);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Compras_D_ver";
-            this.Text = "Compras_ver";
+            this.Text = "VISUALIZACION DE COMPRAS";
             this.Load += new System.EventHandler(this.Compras_D_ver_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bft_compras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataver)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bft_compras;
+        private System.Windows.Forms.DataGridView dataver;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }
