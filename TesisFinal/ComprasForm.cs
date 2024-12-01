@@ -191,7 +191,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfpx.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfpx.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfpx.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -205,7 +205,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfCodigo.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfCodigo.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfCodigo.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -219,7 +219,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfx.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfx.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfx.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -233,7 +233,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnf1.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnf1.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnf1.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -247,7 +247,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnf2.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnf2.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnf2.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -261,7 +261,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnf3.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnf3.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnf3.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -275,7 +275,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnf4.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnf4.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnf4.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -289,7 +289,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfm.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfm.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfm.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -303,7 +303,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfch.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfch.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfch.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -317,7 +317,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfp1.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfp1.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfp1.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -331,7 +331,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfp2.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfp2.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfp2.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -345,7 +345,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfp3.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfp3.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfp3.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -359,7 +359,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfp4.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfp4.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfp4.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -373,7 +373,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfpm.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfpm.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfpm.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -387,7 +387,7 @@ namespace TesisFinal
             if (decimal.TryParse(bnfpch.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bnfpch.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bnfpch.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {

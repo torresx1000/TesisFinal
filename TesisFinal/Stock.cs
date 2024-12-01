@@ -111,7 +111,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_segunda.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_segunda.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_segunda.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -125,7 +125,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_primera.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_primera.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_primera.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -139,7 +139,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_extra.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_extra.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_extra.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -153,7 +153,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_codigo.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_codigo.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_codigo.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -167,7 +167,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_tercera.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_tercera.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_tercera.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -182,7 +182,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_chica.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_chica.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_chica.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -196,7 +196,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_manchada.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_manchada.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_manchada.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
@@ -210,7 +210,7 @@ namespace TesisFinal
             if (decimal.TryParse(bmt_cuarta.Text.Trim(), out valor) && valor >= 0)
             {
 
-                bmt_cuarta.BackColor = Color.LightSlateGray; // Indicar entrada válida
+                bmt_cuarta.BackColor = Color.AliceBlue; // Indicar entrada válida
             }
             else
             {
