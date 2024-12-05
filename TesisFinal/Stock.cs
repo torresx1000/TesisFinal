@@ -65,7 +65,7 @@ namespace TesisFinal
         {
             if (drop_options.selectedValue == null)
             {
-                
+                bmt_codigo.Visible = true;
                 Variables();
                 ListarStock();
 
@@ -73,6 +73,7 @@ namespace TesisFinal
             else if (drop_options.selectedValue == "NUEVO DATO")
             {
                 bnfnuevo.Visible = true;
+                bmt_codigo.Visible = false;
                 bnfcancelar.Visible = true;
                 ListarStock();
                 Variables();
@@ -334,6 +335,7 @@ namespace TesisFinal
             drop_options.selectedIndex = 0;
             Botones();
             Variables();
+            bmt_codigo.Visible = true;
         }
         void ListarStock()
         {

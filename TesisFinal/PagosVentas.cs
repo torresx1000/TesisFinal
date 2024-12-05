@@ -26,7 +26,7 @@ namespace TesisFinal
             txtCodVenta.Text = "";
             txtMotivo.Text = "";
             dtmfecha.ResetText();
-            cbotipo.selectedIndex = 0;
+            cbotipo.SelectedIndex = 0;
             cboestado.SelectedIndex = 0;
             txtMonto.Text = "";
             idventa.Text = "";
@@ -59,7 +59,7 @@ namespace TesisFinal
                 EntPagoVenta pagoVenta = new EntPagoVenta();
                 pagoVenta.descripcion = txtMotivo.Text;
                 pagoVenta.fecha = dtmfecha.Value;
-                pagoVenta.tipopago = cbotipo.selectedValue.Trim();
+                pagoVenta.tipopago = cbotipo.Text.Trim();
                 pagoVenta.estado = 'A';
                 pagoVenta.monto = Convert.ToDecimal(txtMonto.Text.Trim());
                 pagoVenta.idventa = Convert.ToInt32(idventa.Text.Trim());
@@ -80,7 +80,7 @@ namespace TesisFinal
             {
                 EntPagoVenta c = new EntPagoVenta();
                 c.idpagoventa = Convert.ToInt32(txtCodVenta.Text.Trim());
-                c.tipopago = cbotipo.selectedValue.Trim();
+                c.tipopago = cbotipo.Text.Trim();
                 c.estado = 'B';
                 LogPagoVenta.Instancia.ProcesarPagoVentaId(c);
             }
@@ -104,20 +104,9 @@ namespace TesisFinal
                     txtCodVenta.Text = Convert.ToString(sto.idpagoventa);
                     txtMotivo.Text = Convert.ToString(sto.descripcion);
                     dtmfecha.Text = Convert.ToString(sto.fecha);
-                    
-                    if(Convert.ToString(sto.tipopago) == "EFECTIVO")
-                    {
-                        cbotipo.selectedIndex = 1;
-                    }
-                    else if (Convert.ToString(sto.tipopago) == "TARJETA")
-                    {
-                        cbotipo.selectedIndex = 2;
-                    }
-
-
+                    cbotipo.Text = Convert.ToString(sto.tipopago);
                     cboestado.Text = Convert.ToString(sto.estado);
                     txtMonto.Text = Convert.ToString(sto.monto);
-
                 }
 
                 else
@@ -151,6 +140,9 @@ namespace TesisFinal
         private void btcancelar_Click(object sender, EventArgs e)
         {
             LimpiarVariables();
+            txtCodVenta.Visible = false;
+            label1.Visible = false;
+            Botones();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -171,6 +163,8 @@ namespace TesisFinal
                 btcrear.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
+                txtCodVenta.Visible = false;
+                label1.Visible = false;
             }
             else if (drop_options.selectedValue == "PROCESAR")
             {
@@ -189,6 +183,20 @@ namespace TesisFinal
                 bteliminar.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
+            }
+        }
+
+        private void txtMonto_TextChanged(object sender, EventArgs e)
+        {
+            decimal valor;
+            if (decimal.TryParse(txtMonto.Text.Trim(), out valor) && valor >= 0)
+            {
+
+                txtMonto.BackColor = Color.AliceBlue; // Indicar entrada válida
+            }
+            else
+            {
+                txtMonto.BackColor = Color.LightCoral; // Indicar entrada inválida
             }
         }
     }

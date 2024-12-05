@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using CapaEntidad;
 using CapaLogica;
 
@@ -71,7 +72,7 @@ namespace TesisFinal
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarCampos();
-            PagosVentas form = new PagosVentas();
+            dgvPagos form = new dgvPagos();
             form.ShowDialog();
 
         }
@@ -120,6 +121,9 @@ namespace TesisFinal
         {
             LimpiarCampos();
             Botones();
+            bnfCodigo.Visible = true;
+            lid.Visible = true;
+            drop_options.selectedIndex = 0;
 
         }
 
@@ -424,6 +428,8 @@ namespace TesisFinal
 
             if (drop_options.selectedValue == null)
             {
+                bnfCodigo.Visible = true;
+                lid.Visible = true;
 
                 LimpiarCampos();
 
@@ -432,6 +438,8 @@ namespace TesisFinal
             {
                 bnfnuevo.Visible = true;
                 bnfcancelar.Visible = true;
+                bnfCodigo.Visible = false;
+                lid.Visible = false;
                 LimpiarCampos();
 
             }

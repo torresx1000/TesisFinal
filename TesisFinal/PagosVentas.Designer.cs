@@ -30,13 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PagosVentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cboestado = new System.Windows.Forms.ComboBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.idventa = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbotipo = new Bunifu.Framework.UI.BunifuDropdown();
             this.dtmfecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.cbotipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataPagosSin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -78,11 +78,13 @@
             // 
             // txtMonto
             // 
+            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMonto.Location = new System.Drawing.Point(284, 435);
             this.txtMonto.Multiline = true;
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(349, 54);
             this.txtMonto.TabIndex = 42;
+            this.txtMonto.TextChanged += new System.EventHandler(this.txtMonto_TextChanged);
             // 
             // idventa
             // 
@@ -104,27 +106,6 @@
             this.label7.Size = new System.Drawing.Size(427, 52);
             this.label7.TabIndex = 40;
             this.label7.Text = "PROCESAMIENTO DE UNA VENTA";
-            // 
-            // cbotipo
-            // 
-            this.cbotipo.BackColor = System.Drawing.Color.White;
-            this.cbotipo.BorderRadius = 3;
-            this.cbotipo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.cbotipo.DisabledColor = System.Drawing.Color.Transparent;
-            this.cbotipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbotipo.ForeColor = System.Drawing.Color.SeaGreen;
-            this.cbotipo.Items = new string[] {
-        "",
-        "EFECTIVO",
-        "TARJETA"};
-            this.cbotipo.Location = new System.Drawing.Point(301, 313);
-            this.cbotipo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.cbotipo.Name = "cbotipo";
-            this.cbotipo.NomalColor = System.Drawing.Color.White;
-            this.cbotipo.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cbotipo.selectedIndex = -1;
-            this.cbotipo.Size = new System.Drawing.Size(332, 54);
-            this.cbotipo.TabIndex = 38;
             // 
             // dtmfecha
             // 
@@ -424,6 +405,7 @@
             // 
             // txtMotivo
             // 
+            this.txtMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotivo.Location = new System.Drawing.Point(284, 174);
             this.txtMotivo.Multiline = true;
             this.txtMotivo.Name = "txtMotivo";
@@ -432,6 +414,7 @@
             // 
             // txtCodVenta
             // 
+            this.txtCodVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodVenta.Location = new System.Drawing.Point(319, 108);
             this.txtCodVenta.Multiline = true;
             this.txtCodVenta.Name = "txtCodVenta";
@@ -442,19 +425,19 @@
             // 
             this.dataPagosSin.AllowUserToAddRows = false;
             this.dataPagosSin.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataPagosSin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataPagosSin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataPagosSin.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataPagosSin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataPagosSin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataPagosSin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataPagosSin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataPagosSin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataPagosSin.DoubleBuffered = true;
             this.dataPagosSin.EnableHeadersVisualStyles = false;
@@ -492,6 +475,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.cbotipo);
             this.bunifuGradientPanel1.Controls.Add(this.btprocesar);
             this.bunifuGradientPanel1.Controls.Add(this.bteliminar);
             this.bunifuGradientPanel1.Controls.Add(this.btcrear);
@@ -507,6 +491,19 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1167, 796);
             this.bunifuGradientPanel1.TabIndex = 78;
+            // 
+            // cbotipo
+            // 
+            this.cbotipo.BackColor = System.Drawing.Color.White;
+            this.cbotipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
+            this.cbotipo.FormattingEnabled = true;
+            this.cbotipo.Items.AddRange(new object[] {
+            "EFECTIVO",
+            "TARJETA"});
+            this.cbotipo.Location = new System.Drawing.Point(284, 325);
+            this.cbotipo.Name = "cbotipo";
+            this.cbotipo.Size = new System.Drawing.Size(349, 33);
+            this.cbotipo.TabIndex = 79;
             // 
             // PagosVentas
             // 
@@ -529,7 +526,6 @@
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.idventa);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cbotipo);
             this.Controls.Add(this.dtmfecha);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -549,7 +545,6 @@
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.ComboBox idventa;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuDropdown cbotipo;
         private Bunifu.Framework.UI.BunifuDatepicker dtmfecha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
@@ -570,5 +565,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.ComboBox cbotipo;
     }
 }

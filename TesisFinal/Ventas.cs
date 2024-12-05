@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bunifu.Framework.UI;
 using CapaEntidad;
 using CapaLogica;
 
@@ -498,12 +499,15 @@ namespace TesisFinal
 
             if (drop_options.selectedValue == null)
             {
-
+                bunifuCustomLabel11.Visible = true;
+                codigo.Visible = true;
                 LimpiarCampos();
 
             }
             else if (drop_options.selectedValue == "NUEVO DATO")
             {
+                bunifuCustomLabel11.Visible = false;
+                codigo.Visible = false;
                 bnfnuevo.Visible = true;
                 bnfcancelar.Visible = true;
             }
@@ -540,6 +544,9 @@ namespace TesisFinal
          
             LimpiarCampos();
             Botones();
+            bunifuCustomLabel11.Visible = true;
+            codigo.Visible = true;
+            drop_options.selectedIndex = 0;
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)

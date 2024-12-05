@@ -102,6 +102,7 @@
             this.bunifuCustomLabel25 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCustomLabel20 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.gb_stock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -1299,6 +1300,7 @@
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.White;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel20);
             this.bunifuGradientPanel1.Controls.Add(this.codstock);
             this.bunifuGradientPanel1.Controls.Add(this.bx_search_date);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel11);
@@ -1435,6 +1437,18 @@
             this.materialLabel2.TabIndex = 89;
             this.materialLabel2.Text = "Select Option";
             // 
+            // bunifuCustomLabel20
+            // 
+            this.bunifuCustomLabel20.AutoSize = true;
+            this.bunifuCustomLabel20.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel20.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel20.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel20.Location = new System.Drawing.Point(977, 496);
+            this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
+            this.bunifuCustomLabel20.Size = new System.Drawing.Size(267, 68);
+            this.bunifuCustomLabel20.TabIndex = 129;
+            this.bunifuCustomLabel20.Text = "VENTAS";
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1532,5 +1546,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel26;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel25;
         private Bunifu.Framework.UI.BunifuMaterialTextbox codstock;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel20;
     }
 }

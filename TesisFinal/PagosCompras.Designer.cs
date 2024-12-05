@@ -48,7 +48,6 @@
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.cboCodCompra = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cboTipo = new Bunifu.Framework.UI.BunifuDropdown();
             this.dtmFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.datapagosSin = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.txtCodPago = new System.Windows.Forms.TextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.cboTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datapagosSin)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -362,7 +362,6 @@
             this.cboEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Items.AddRange(new object[] {
-            "",
             "PENDIENTE",
             "COMPLETADO"});
             this.cboEstado.Location = new System.Drawing.Point(262, 416);
@@ -372,11 +371,13 @@
             // 
             // txtMonto
             // 
+            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMonto.Location = new System.Drawing.Point(291, 467);
             this.txtMonto.Multiline = true;
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(349, 54);
             this.txtMonto.TabIndex = 64;
+            this.txtMonto.TextChanged += new System.EventHandler(this.txtMonto_TextChanged);
             // 
             // cboCodCompra
             // 
@@ -398,27 +399,6 @@
             this.label7.Size = new System.Drawing.Size(450, 52);
             this.label7.TabIndex = 62;
             this.label7.Text = "PROCESAMIENTO DE UNA COMPRA";
-            // 
-            // cboTipo
-            // 
-            this.cboTipo.BackColor = System.Drawing.Color.White;
-            this.cboTipo.BorderRadius = 3;
-            this.cboTipo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.cboTipo.DisabledColor = System.Drawing.Color.Transparent;
-            this.cboTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTipo.ForeColor = System.Drawing.Color.SeaGreen;
-            this.cboTipo.Items = new string[] {
-        "",
-        "EFECTIVO",
-        "TARJETA"};
-            this.cboTipo.Location = new System.Drawing.Point(308, 345);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.cboTipo.Name = "cboTipo";
-            this.cboTipo.NomalColor = System.Drawing.Color.White;
-            this.cboTipo.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.cboTipo.selectedIndex = -1;
-            this.cboTipo.Size = new System.Drawing.Size(332, 54);
-            this.cboTipo.TabIndex = 60;
             // 
             // dtmFecha
             // 
@@ -461,6 +441,7 @@
             // 
             // txtProveedor
             // 
+            this.txtProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProveedor.Location = new System.Drawing.Point(291, 206);
             this.txtProveedor.Multiline = true;
             this.txtProveedor.Name = "txtProveedor";
@@ -469,6 +450,7 @@
             // 
             // txtCodPago
             // 
+            this.txtCodPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodPago.Location = new System.Drawing.Point(340, 136);
             this.txtCodPago.Multiline = true;
             this.txtCodPago.Name = "txtCodPago";
@@ -484,6 +466,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.cboTipo);
             this.bunifuGradientPanel1.Controls.Add(this.btprocesar);
             this.bunifuGradientPanel1.Controls.Add(this.btcrear);
             this.bunifuGradientPanel1.Controls.Add(this.btbuscar);
@@ -501,6 +484,19 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1242, 765);
             this.bunifuGradientPanel1.TabIndex = 84;
+            // 
+            // cboTipo
+            // 
+            this.cboTipo.BackColor = System.Drawing.Color.White;
+            this.cboTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
+            this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Items.AddRange(new object[] {
+            "EFECTIVO",
+            "TARJETA"});
+            this.cboTipo.Location = new System.Drawing.Point(262, 357);
+            this.cboTipo.Name = "cboTipo";
+            this.cboTipo.Size = new System.Drawing.Size(378, 33);
+            this.cboTipo.TabIndex = 85;
             // 
             // dgvPagos
             // 
@@ -522,7 +518,6 @@
             this.Controls.Add(this.cboEstado);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.cboCodCompra);
-            this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.dtmFecha);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -557,7 +552,6 @@
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.ComboBox cboCodCompra;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuDropdown cboTipo;
         private Bunifu.Framework.UI.BunifuDatepicker dtmFecha;
         private System.Windows.Forms.DataGridView datapagosSin;
         private System.Windows.Forms.Label label8;
@@ -565,5 +559,6 @@
         private System.Windows.Forms.TextBox txtCodPago;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.ComboBox cboTipo;
     }
 }

@@ -28,7 +28,7 @@ namespace TesisFinal
             txtCodPago.Text = "";
             txtProveedor.Text = "";
             dtmFecha.ResetText();
-            cboTipo.selectedIndex = 0;
+            cboTipo.SelectedIndex = 0;
             cboEstado.SelectedIndex = 0;
             txtMonto.Text = "";
             cboCodCompra.Text  = "";
@@ -61,13 +61,14 @@ namespace TesisFinal
             {
                 EntPagoCompra pagoCompra = new EntPagoCompra();
                 pagoCompra.proveedor = txtProveedor.Text;
-                pagoCompra.fecha= dtmFecha.Value;
-                pagoCompra.tipopago = cboTipo.selectedValue.Trim();
+                pagoCompra.fecha = dtmFecha.Value;
+                pagoCompra.tipopago = Convert.ToString(cboTipo.Text.Trim());
                 pagoCompra.estado = 'A';
                 pagoCompra.monto = Convert.ToDecimal(txtMonto.Text.Trim());
-                pagoCompra.idcompra= Convert.ToInt32(cboCodCompra.Text.Trim());
+                pagoCompra.idcompra = Convert.ToInt32(cboCodCompra.Text.Trim());
                 LogPagoCompra.Instancia.InsertarPagoCompras(pagoCompra);
-            }catch(Exception ex)
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
             }
@@ -81,7 +82,7 @@ namespace TesisFinal
             {
                 EntPagoCompra c = new EntPagoCompra();
                 c.idpagocompra = Convert.ToInt32(txtCodPago.Text.Trim());
-                c.tipopago = cboTipo.selectedValue.Trim();
+                c.tipopago = Convert.ToString(cboTipo.Text.Trim());
                 c.estado = 'B';
                 LogPagoCompra.Instancia.ProcesarPagoCompraId(c);
             }
@@ -105,11 +106,11 @@ namespace TesisFinal
                     dtmFecha.Text = Convert.ToString(sto.fecha);
                     if (Convert.ToString(sto.tipopago) == "EFECTIVO")
                     {
-                        cboTipo.selectedIndex = 1;
+                        cboTipo.SelectedIndex = 0;
                     }
                     else if (Convert.ToString(sto.tipopago) == "TARJETA")
                     {
-                        cboTipo.selectedIndex = 2;
+                        cboTipo.SelectedIndex = 1;
                     }
                     
                     cboEstado.Text = Convert.ToString(sto.estado);
@@ -131,6 +132,9 @@ namespace TesisFinal
         private void btcancelar_Click(object sender, EventArgs e)
         {
             LimpiarVariables();
+            Botones();
+            txtCodPago.Visible = true;
+            label1.Visible = true;
         }
 
         private void bteliminar_Click(object sender, EventArgs e)
@@ -160,10 +164,14 @@ namespace TesisFinal
             {
 
                 LimpiarVariables();
+                txtCodPago.Visible = true;
+                label1.Visible = true;
 
             }
             else if (drop_options.selectedValue == "CREAR ORDEN")
             {
+                txtCodPago.Visible = false;
+                label1.Visible = false;
                 btcrear.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
@@ -185,6 +193,20 @@ namespace TesisFinal
                 bteliminar.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
+            }
+        }
+
+        private void txtMonto_TextChanged(object sender, EventArgs e)
+        {
+            decimal valor;
+            if (decimal.TryParse(txtMonto.Text.Trim(), out valor) && valor >= 0)
+            {
+
+                txtMonto.BackColor = Color.AliceBlue; // Indicar entrada válida
+            }
+            else
+            {
+                txtMonto.BackColor = Color.LightCoral; // Indicar entrada inválida
             }
         }
     }
