@@ -14,7 +14,7 @@ namespace TesisFinal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ComprasForm());
+            Application.Run(new Ventas());
         }
     }
 }
