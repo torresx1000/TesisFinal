@@ -71,6 +71,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Stock_ver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock_ver";
             this.Load += new System.EventHandler(this.Stock_ver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

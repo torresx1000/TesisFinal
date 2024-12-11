@@ -84,6 +84,7 @@
             this.ClientSize = new System.Drawing.Size(1244, 520);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Compras_D_ver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VISUALIZACION DE COMPRAS";
             this.Load += new System.EventHandler(this.Compras_D_ver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataver)).EndInit();

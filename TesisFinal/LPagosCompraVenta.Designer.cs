@@ -76,6 +76,7 @@
             this.ClientSize = new System.Drawing.Size(1290, 553);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "PagosCompraVenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PagosCompraVenta";
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

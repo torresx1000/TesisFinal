@@ -132,6 +132,8 @@ namespace CapaDatos
         }
 
         
+
+
         // insertar pago compra
         public Boolean InsertarPagoCompra(EntPagoCompra pago)
         {

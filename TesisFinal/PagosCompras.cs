@@ -10,6 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.Globalization;
+using System.IO;
 
 namespace TesisFinal
 {
@@ -76,8 +80,10 @@ namespace TesisFinal
             ListarPagosSinProceso();
         }
 
+
         private void btprocesar_Click(object sender, EventArgs e)
-        {
+        {/*
+           
             try
             {
                 EntPagoCompra c = new EntPagoCompra();
@@ -91,7 +97,84 @@ namespace TesisFinal
                 MessageBox.Show("Error" + ex);
             }
             ListarPagosSinProceso();
+
+
+            // aquim va reporte
+
+            */
+
+
+            try
+            {
+                // Crear objeto de pago
+                EntPagoCompra c = new EntPagoCompra
+                {
+                    idpagocompra = Convert.ToInt32(txtCodPago.Text.Trim()),
+                    tipopago = Convert.ToString(cboTipo.Text.Trim()),
+                    estado = 'B'
+                };
+
+                // Procesar el pago
+                LogPagoCompra.Instancia.ProcesarPagoCompraId(c);
+
+                // Buscar el pago para obtener la información completa
+                EntPagoCompra pago = LogPagoCompra.Instancia.BuscarPagoCompraId(c.idpagocompra);
+
+                // Generar el PDF
+                GenerarPdfPagoCompra(pago);
+
+                MessageBox.Show("Pago procesado y PDF generado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            Botones();
+            // Actualizar lista de pagos
+            ListarPagosSinProceso();
         }
+        private void GenerarPdfPagoCompra(EntPagoCompra pago)
+        {
+            string carpetaDestino = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Pagos Compra", "Pagos");
+            Directory.CreateDirectory(carpetaDestino);
+
+            string rutaArchivo = Path.Combine(carpetaDestino, $"Pago_{pago.idpagocompra}.pdf");
+
+            using (FileStream stream = new FileStream(rutaArchivo, FileMode.Create))
+            {
+                Document pdfDoc = new Document(PageSize.A4, 25, 25, 30, 30);
+                PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+
+                pdfDoc.Open(); // Establecer imagen de fondo
+                iTextSharp.text.Image imgFondo = iTextSharp.text.Image.GetInstance("D:\\Proyectos\\copia\\TesisFinal\\TesisFinal\\images_icons\\fondor.png");
+                imgFondo.SetAbsolutePosition(0, 0);  // Posición en la esquina inferior izquierda
+                imgFondo.ScaleToFit(pdfDoc.PageSize.Width, pdfDoc.PageSize.Height);  // Ajustar al tamaño de la página
+                writer.DirectContentUnder.AddImage(imgFondo);  // Añadir como fondo
+
+
+                // Agregar contenido al PDF
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph(" "));
+                pdfDoc.Add(new Paragraph("                  " + "Comprobante de Pago", FontFactory.GetFont( FontFactory.HELVETICA_BOLD,  17)));
+                pdfDoc.Add(new Paragraph("             " + $"ID Pago: {pago.idpagocompra}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+                pdfDoc.Add(new Paragraph("             " + $"Proveedor: {pago.proveedor}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+                pdfDoc.Add(new Paragraph("             " + $"Fecha: {pago.fecha:dd/MM/yyyy}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+                pdfDoc.Add(new Paragraph("             " + $"Tipo de Pago: {pago.tipopago}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+                pdfDoc.Add(new Paragraph("             " + $"Estado: {pago.estado}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+                pdfDoc.Add(new Paragraph("             " + $"Monto: S/ {pago.monto:F2}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15)));
+                pdfDoc.Add(new Paragraph("             " + $"ID Compra: {pago.idcompra}", FontFactory.GetFont(FontFactory.TIMES_ROMAN, 14)));
+
+                pdfDoc.Close();
+                writer.Close();
+            }
+        }
+
         private void btbuscar_Click(object sender, EventArgs e)
         {
             try
@@ -178,18 +261,21 @@ namespace TesisFinal
             }
             else if (drop_options.selectedValue == "PROCESAR")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para PROCESAR.");
                 btprocesar.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
             }
             else if (drop_options.selectedValue == "BUSCAR")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para BUSCAR.");
                 btbuscar.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();
             }
             else if (drop_options.selectedValue == "ELIMINAR")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para ELIMINAR.");
                 bteliminar.Visible = true;
                 btcancelar.Visible = true;
                 LimpiarVariables();

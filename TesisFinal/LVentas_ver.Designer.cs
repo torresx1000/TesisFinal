@@ -91,6 +91,7 @@
             this.Controls.Add(this.bft_ventas);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "LVentas_ver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VENTAS";
             this.Load += new System.EventHandler(this.Ventas_ver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bft_ventas)).EndInit();

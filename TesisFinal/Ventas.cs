@@ -506,6 +506,7 @@ namespace TesisFinal
             }
             else if (drop_options.selectedValue == "NUEVO DATO")
             {
+
                 bunifuCustomLabel11.Visible = false;
                 codigo.Visible = false;
                 bnfnuevo.Visible = true;
@@ -513,16 +514,19 @@ namespace TesisFinal
             }
             else if (drop_options.selectedValue == "ACTUALIZAR DATO")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para ACTUALIZAR.");
                 bnfmodificar.Visible = true;
                 bnfcancelar.Visible = true;
             }
             else if (drop_options.selectedValue == "BUSCAR DATO")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para BUSCAR.");
                 bnfconsultar.Visible = true;
                 bnfcancelar.Visible = true;
             }
             else if (drop_options.selectedValue == "ELIMINAR DATO")
             {
+                MessageBox.Show("ingresa el ID o CODIGO para ELIMINAR.");
                 bnfeliminar.Visible = true;
                 bnfcancelar.Visible = true;
             }
